@@ -35,6 +35,13 @@ public class DVD extends Product {
         studio = "Universal";
     }
 
+	public DVD(String name, int number, int quantity, double price, int length, String rating, String studio) {
+		super(name, number, quantity, price);
+		this.length = length;
+		this.rating = rating;
+		this.studio = studio;
+	}
+
     @Override
     public void print() {
         super.print();

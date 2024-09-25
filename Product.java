@@ -9,6 +9,13 @@ public class Product {
         price = 0.0;
         name = "default";
     }
+
+    public Product(String name, int number, int quantity, double price) {
+        this.name = name;
+        this.number = number;
+        this.quantity = quantity;
+        this.price = price;
+    }
 	public String getName() {
 		return this.name;
 	}
